@@ -1,0 +1,40 @@
+.wrapper {
+    padding: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #99A0A3;
+    cursor: pointer;
+
+    &Selected {
+        border: 1px solid #41522E;
+        color: #41522E;
+    }
+}
+
+.filterIcon {
+    display: flex;
+    align-items: center;
+
+    &Up {
+        svg {
+            path:nth-of-type(1) {
+                fill: #41522E;
+                fill-opacity: 1;
+            }
+        }
+    }
+
+    &Down {
+        svg {
+            path:nth-of-type(2) {
+                fill: #41522E;
+                fill-opacity: 1;
+            }
+        }
+    }
+}

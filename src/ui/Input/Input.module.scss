@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    .label {
+        font-size: 16px;
+        line-height: 18.75px;
+    }
+
+    .labelBold {
+        font-weight: 600;
+    }
+
+    .input {
+        display: block;
+        padding: 16px;
+        border: 1px solid #C9CACC;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .error {
+        color: #EB1717;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}

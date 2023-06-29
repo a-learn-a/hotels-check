@@ -1,0 +1,105 @@
+.wrapper {
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(135, 135, 135, 0.2);
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    column-gap: 24px;
+}
+
+.name,
+.price {
+    font-size: 17px;
+    line-height: 22px;
+}
+
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 20px;
+}
+
+.date {
+    display: flex;
+    gap: 44px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #878787;
+    
+    .daysCount {
+        position: relative;
+    }
+
+    .daysCount::before {
+        content: '';
+        position: absolute;
+        left: -20px;
+        width: 9px;
+        height: 1px;
+        bottom: 1px;
+        top: 50%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-color: #C4C4C4;
+        border-radius: 1px;
+    }
+
+}
+
+.price {
+    position: absolute;
+    bottom: 7px;
+    right: 0;
+    display: flex;
+    align-items:flex-end;
+    gap: 20px;
+
+    .title {
+        font-size: 11px;
+        line-height: 22px;
+        color: #878787;
+    }
+}
+
+.hotelIcon {
+    background-color: rgba(65, 82, 46, 0.05);
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.likeIcon {
+    cursor: pointer;
+    align-self: flex-start;
+
+    &Selected {
+        svg {
+            path {
+                fill: #E55858;
+                stroke: #E55858;
+            }
+        }
+    }
+}
+
+.likeIcon:hover {
+    svg {
+        path {
+            fill: #EBEBEB;
+            stroke: #C4C4C4;
+        }
+    }
+}

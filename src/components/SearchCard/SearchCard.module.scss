@@ -1,0 +1,12 @@
+@import '../../assets/scss/helpers/mixins';
+
+.cardWrapper {
+    @include card;
+}
+
+.inputsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+}

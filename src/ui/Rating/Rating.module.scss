@@ -1,0 +1,12 @@
+.wrapper {
+    display: flex;
+    gap: 3px;
+
+    .starActive {
+        svg {
+            path {
+                fill: #CDBC1E;
+            }
+        }
+    }
+}

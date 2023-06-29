@@ -1,0 +1,17 @@
+@import '../../assets/scss/helpers/mixins';
+
+.cardWrapper {
+    @include card;
+}
+
+.title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.filtersWrapper {
+    display: flex;
+    gap: 8px;
+    margin: 32px 0;
+}

@@ -1,0 +1,19 @@
+.wrapper {
+    min-height: 100vh;
+    padding-bottom: 26px;
+    background-color: #F4F4F4;
+}
+
+.contentWrapper {
+    max-width: 1048px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    column-gap: 24px;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

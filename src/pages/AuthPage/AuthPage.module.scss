@@ -1,0 +1,45 @@
+@import '../../assets/scss/helpers/mixins';
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-image: url("./assets/auth-bg.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+.form {
+    width: 409px;
+    z-index: 1;
+    @include card;
+}
+
+.formTitle {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.inputsWrapper {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

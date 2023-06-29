@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom'
 
-function App() {
+import { AuthPage, HotelsPage } from './pages'
+
+import { AuthProtection, RouteProtection } from './router'
+import { HOME_PATH, HOTELS_PATH } from './constants'
+
+import './assets/scss/app.scss'
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes>
+      <Route
+        path={HOTELS_PATH}
+        element={
+          <AuthProtection>
+            <HotelsPage />
+          </AuthProtection>
+        }
+      />
+      <Route
+        path={HOME_PATH}
+        element={
+          <RouteProtection>
+            <AuthPage />
+          </RouteProtection>
+        }
+      />
+    </Routes>
+  )
 }
-
-export default App;

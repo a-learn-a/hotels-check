@@ -1,0 +1,6 @@
+@import "../helpers/variables";
+@import "../helpers/mixins.scss";
+body {
+  font-family: $font-family-base;
+  color: #424242;
+}
